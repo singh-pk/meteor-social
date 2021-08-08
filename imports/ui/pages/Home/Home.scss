@@ -1,0 +1,8 @@
+@import '../../main';
+
+.home {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(auto, 800px);
+  justify-content: center;
+}

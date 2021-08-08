@@ -1,0 +1,92 @@
+@import '../../main';
+
+.welcomePage {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+
+  .welcomePage-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    height: 95vh;
+
+    & > section {
+      flex: 1 1 500px;
+    }
+
+    .welcomePage-section2 {
+      background: url('https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png')
+        no-repeat center/cover;
+    }
+
+    .welcomePage-section1 {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      padding: 0 30px;
+      gap: 2rem;
+
+      & > span {
+        &:first-of-type {
+          font-weight: 700;
+          font-size: 64px;
+        }
+
+        &:last-of-type {
+          font-size: 31px;
+          font-weight: 700;
+        }
+      }
+
+      & > div {
+        display: grid;
+        gap: 1.3rem;
+        max-width: 24rem;
+
+        & > span {
+          &:first-of-type {
+            font-size: 13px;
+            color: #536471;
+          }
+
+          &:last-of-type {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .welcomePage-nav {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    color: #5b7083;
+    justify-content: center;
+    margin: 1rem 0;
+
+    & > div {
+      margin: 0.5rem;
+
+      &:hover:not(:last-of-type) {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .welcomePage-section1 {
+    gap: 1.5rem !important;
+
+    & > span:first-of-type {
+      font-size: 31px !important;
+    }
+
+    & > span:last-of-type {
+      font-size: 20px !important;
+    }
+  }
+}

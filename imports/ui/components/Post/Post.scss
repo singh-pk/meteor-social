@@ -1,0 +1,31 @@
+@import '../../main';
+
+.post {
+  padding: 0.5rem;
+  border-bottom: $border;
+  max-width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > div:first-of-type {
+    word-break: break-word;
+    max-width: calc(100% - 3rem);
+
+    & > span:first-of-type {
+      color: $ternaryColor;
+    }
+  }
+
+  .delete {
+    color: #ff0000;
+    cursor: pointer;
+    transition: 0.2s all linear;
+    max-width: 3rem;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

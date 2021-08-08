@@ -1,0 +1,12 @@
+@mixin imgStyle {
+  height: 100%;
+  width: 100%;
+}
+
+$borderColor: #bebebe6c;
+
+$border: 1px solid $borderColor;
+
+$primaryColor: #fff;
+$secondaryColor: #1da1f2;
+$ternaryColor: #536471;

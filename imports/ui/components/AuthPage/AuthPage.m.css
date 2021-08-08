@@ -1,0 +1,10 @@
+.authPage {
+  display: grid;
+  place-items: center;
+}
+
+.authPageHeader {
+  font-size: 31px;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
