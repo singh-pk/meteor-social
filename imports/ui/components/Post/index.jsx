@@ -31,9 +31,11 @@ const Post = () => {
             <span>{email}</span> - <span>{post}</span>
           </div>
 
-          <div className='delete' onClick={() => handleClick(_id, userId)}>
-            Delete
-          </div>
+          {Meteor.userId() === userId && (
+            <div className='delete' onClick={() => handleClick(_id, userId)}>
+              Delete
+            </div>
+          )}
         </div>
       ))}
     </div>
